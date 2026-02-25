@@ -1,3 +1,18 @@
+let isEmpty = (schedule) => {
+	for(let key in schedule){
+		return false;
+	}
+	return true;
+};
+let schedule = {};
+
+console.log ( isEmpty(schedule) );
+
+schedule["8:30"] = "get up";
+
+console.log( isEmpty(schedule) );
+
+return;
 let user = {}
 user['name'] = 'John'
 user['surname'] = 'Smith'

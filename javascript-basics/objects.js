@@ -1,3 +1,13 @@
+let menu = { width: 200, height:300, title: "My Menu" };
+
+((object)=>{
+	for ( let key in object ){
+		//console.log(typeof object[key]);
+		if(typeof object[key] === 'number') menu[key] *= 2;
+		console.log(menu[key])
+	}
+})(menu);	
+return;
 let salaries = { John: 100, Ann: 160, Pete: 130, };
 let sum = 0;
 for( let key in salaries ){

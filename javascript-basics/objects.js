@@ -1,3 +1,22 @@
+
+let ladder = {
+	step: 0,
+	up(){
+		this.step++;
+		return this;
+	},
+	down(){
+		this.step--;
+		return this;
+	},
+	showStep(){
+		console.log( this.step );
+		return this;
+	},
+};
+ladder.up().showStep().down().showStep();
+
+return;
 let menu = { width: 200, height:300, title: "My Menu" };
 
 ((object)=>{

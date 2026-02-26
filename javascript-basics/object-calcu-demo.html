@@ -1,17 +1,20 @@
 <script>
-	let calculator = {
-		read(){
+	function Calculator(){
+
+		this.read = () => {
 			this.a = +prompt('Value of a?', '0');
 			this.b = +prompt('Value of b?', '0');
 		},
-		sum(){
+			this.sum = () => {
 			return this.a + this.b
 		},
-		mul(){
+			this.mul = () => {
 			return this.a * this.b
-		},
-
+		}
+	
 	};
+
+	let calculator = new Calculator();
 
 	calculator.read();
 	alert( calculator.sum() )

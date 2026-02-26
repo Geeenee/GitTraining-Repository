@@ -1,4 +1,13 @@
+let randofunc = (name) => {
+	return {
+		name,
+	};
+};
 
+let test = randofunc('John');
+console.log(test.name);
+
+return;
 let ladder = {
 	step: 0,
 	up(){

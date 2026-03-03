@@ -1,0 +1,18 @@
+
+<script>
+	let value;
+	let readNumber = function(){
+		
+		do{
+
+			value = prompt('val?', '0')
+		}while(!isFinite(value));
+			
+		if(value === null || value === '')
+		return +value;
+	};
+
+	let result = readNumber();
+
+	alert(result);
+</script>

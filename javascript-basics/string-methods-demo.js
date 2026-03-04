@@ -1,3 +1,10 @@
+let extractCurrencyValue = function(currency){
+	return currency ? value = +currency.slice( 1 ) : '';
+};
+
+console.log(extractCurrencyValue('$120') === 120);
+
+return;
 let truncate = (str, maxlength) => {
 	
 	return str.length < maxlength ? str : str.slice( 0 , maxlength - 1 ) + '\u2026';

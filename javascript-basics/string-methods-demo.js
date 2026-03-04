@@ -1,7 +1,14 @@
+let truncate = (str, maxlength) => {
+	
+	return str.length < maxlength ? str : str.slice( 0 , maxlength - 1 ) + '\u2026';
+};
+
+console.log( truncate("Hi everyone!" ,20 ) )
+console.log( truncate("What I'd like to tell on this topic is:" ,20 ) )
+return;
 let checkSpam = (word) => {
 	word = word.toLowerCase();
-	if(word.includes('viagra') || word.includes('xxx')) return true;
-	return false;
+	return word.includes('viagra') || word.includes('xxx');
 };
 console.log(checkSpam(`buy ViAgRA now`));
 console.log(checkSpam(`free xxxxx`));

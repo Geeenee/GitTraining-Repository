@@ -1,4 +1,11 @@
+let baseArray = [5, 3, 8, 1];
 
+let filtered = ((arr, a, b) => {
+	return arr.filter(item => item >= a && item <= b)
+})(baseArray, 1, 4)
+
+console.log(filtered);
+return;
 let camelize = (str) => {
 	let splitStr = str.split('-');
 	let camelCaseStr = splitStr.map( (item, index) => index === 0 ? item : item[0].toUpperCase() + item.slice(1)).join('');

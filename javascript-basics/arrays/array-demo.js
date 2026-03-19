@@ -1,3 +1,16 @@
+let baseArray1 = [5, 3, 8, 1];
+
+let filterInPlace = (arr, a, b) => {
+	for(let i = (arr.length - 1); i >= 0; i-- ){
+		console.log(i);
+		if(arr[i] < a || arr[i] > b) baseArray1.splice(i, 1);
+	}
+}
+
+filterInPlace(baseArray1, 2, 4);
+console.log(baseArray1);
+return;
+
 let baseArray = [5, 3, 8, 1];
 
 let filtered = ((arr, a, b) => {

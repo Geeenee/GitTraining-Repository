@@ -1,3 +1,8 @@
+let arr = [5, 2, 1, -10, 8];
+
+console.log(arr.sort((a, b) => b - a));
+
+return;
 let baseArray1 = [5, 3, 8, 1];
 
 let filterInPlace = (arr, a, b) => {

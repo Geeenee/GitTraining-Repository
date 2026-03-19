@@ -1,3 +1,16 @@
+let webComponentsArray = ["HTML", "Javascript", "CSS"];
+
+let copySorted = function( arr ){
+	let arrCopy = arr.slice(0);
+	return arrCopy.sort();
+};
+
+let sorted = copySorted( webComponentsArray );
+
+console.log( sorted );
+console.log( webComponentsArray );
+
+return;
 let arr = [5, 2, 1, -10, 8];
 
 console.log(arr.sort((a, b) => b - a));

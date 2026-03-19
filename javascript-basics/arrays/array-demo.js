@@ -1,3 +1,29 @@
+t function Calculator(){
+	
+	this.calculate = (problem) => {
+		let prob = problem.split(' ')
+	
+		return this.operation[prob[1]](+prob[0], +prob[2])
+	}
+
+	this.addMethod = (operator, fn) => {
+		this.operation[operator] = fn
+	}
+	
+	this.operation = {
+		"+": (a, b) => a + b
+	}
+}
+
+let session = new Calculator();
+
+//console.log(session);
+session.addMethod("**", (a, b) => a ** b)
+console.log(session.operation);
+
+console.log(session.calculate('5 ** 5'))
+
+return;
 let webComponentsArray = ["HTML", "Javascript", "CSS"];
 
 let copySorted = function( arr ){

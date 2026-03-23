@@ -1,14 +1,29 @@
-let john = { name: "John", age: 25 };
-let pete = { name: "Pete", age: 30 };
-let mary = { name: "Mary", age: 28 };
+let strings = ["Hare", "Krishna", "Hare", "Krishna",
+  "Krishna", "Krishna", "Hare", "Hare", ":-O"
+];
 
-let users = [ pete, john, mary ];
+let unique = function(arr){
+	let list = [];
+	arr.forEach( ( string ) => {
+		if(!list.includes(string)) list.push(string);
+	});
+	return list;
+}
 
-let getAverageAge = (arr) => { 
-	return Math.ceil( avrAge = arr.reduce( ( sum, user ) => sum + user.age, 0) / arr.length );
-};
+console.log( unique(strings) );
+return;
 
-console.log( getAverageAge(users) );
+//let john = { name: "John", age: 25 };
+//let pete = { name: "Pete", age: 30 };
+//let mary = { name: "Mary", age: 28 };
+
+//let users = [ pete, john, mary ];
+
+//let getAverageAge = (arr) => { 
+//	return Math.ceil( avrAge = arr.reduce( ( sum, user ) => sum + user.age, 0) / arr.length );
+//};
+
+//console.log( getAverageAge(users) );
 
 return;
 let shuffle = (arr) => {

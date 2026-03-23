@@ -1,3 +1,13 @@
+let shuffle = (arr) => {
+	arr.sort( () => Math.random() - 0.5)
+};
+
+let numArr = [1, 2, 3]
+
+shuffle(numArr);
+console.log(numArr);
+
+return;
 let john = { name: "John", age: 25 };
 let pete = { name: "Pete", age: 30 };
 let mary = { name: "Mary", age: 28 };

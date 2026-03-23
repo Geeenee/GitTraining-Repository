@@ -1,3 +1,16 @@
+let john = { name: "John", age: 25 };
+let pete = { name: "Pete", age: 30 };
+let mary = { name: "Mary", age: 28 };
+
+let users = [ pete, john, mary ];
+
+let getAverageAge = (arr) => { 
+	return Math.ceil( avrAge = arr.reduce( ( sum, user ) => sum + user.age, 0) / arr.length );
+};
+
+console.log( getAverageAge(users) );
+
+return;
 let shuffle = (arr) => {
 	arr.sort( () => Math.random() - 0.5)
 };
@@ -8,19 +21,19 @@ shuffle(numArr);
 console.log(numArr);
 
 return;
-let john = { name: "John", age: 25 };
-let pete = { name: "Pete", age: 30 };
-let mary = { name: "Mary", age: 28 };
+//let john = { name: "John", age: 25 };
+//let pete = { name: "Pete", age: 30 };
+//let mary = { name: "Mary", age: 28 };
 
-let users = [ pete, john, mary ];
+//let users = [ pete, john, mary ];
 
-let sortByAge = (arr) => { 
-	arr.sort( (a, b) => a.age - b.age)
-};
+//let sortByAge = (arr) => { 
+//	arr.sort( (a, b) => a.age - b.age)
+//};
 
-sortByAge(users);
+//sortByAge(users);
 
-console.log(users)
+//console.log(users)
 
 return;
 //let john = { name: "John", surname: "Smith", id: 1 };

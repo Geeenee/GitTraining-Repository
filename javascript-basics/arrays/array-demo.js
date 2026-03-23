@@ -1,12 +1,26 @@
+let john = { name: "John", age: 25 };
+let pete = { name: "Pete", age: 30 };
+let mary = { name: "Mary", age: 28 };
 
-let john = { name: "John", surname: "Smith", id: 1 };
-let pete = { name: "Pete", surname: "Hunt", id: 2 };
-let mary = { name: "Mary", surname: "Key", id: 3 };
+let users = [ pete, john, mary ];
 
-let users = [ john, pete, mary ];
+let sortByAge = (arr) => { 
+	arr.sort( (a, b) => a.age - b.age)
+};
 
-let usersMapped = users.map( item => ({ fullName:`${item.name} ${item.surname}`, id: item.id })) 
-console.log(usersMapped);
+sortByAge(users);
+
+console.log(users)
+
+return;
+//let john = { name: "John", surname: "Smith", id: 1 };
+//let pete = { name: "Pete", surname: "Hunt", id: 2 };
+//let mary = { name: "Mary", surname: "Key", id: 3 };
+
+//let users = [ john, pete, mary ];
+
+//let usersMapped = users.map( item => ({ fullName:`${item.name} ${item.surname}`, id: item.id })) 
+//console.log(usersMapped);
 return;
 
 //let john = { name: "John", age: 25 };

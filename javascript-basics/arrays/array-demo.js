@@ -1,3 +1,20 @@
+let groupById = function(arr) {
+	return arr.reduce((stack, item) => { 
+		stack[item.id] = item 
+		return stack; }
+	,{})
+};
+
+let john = { id: 'john', name: "John Smith", age: 20 };
+let ann = { id: 'ann', name: "Ann Smith", age: 24 };
+let pete = { id: 'pete', name: "Pete Peterson", age: 31 };
+
+let users = [ john, ann, pete ];
+console.log(users);
+let usersById = groupById(users)
+console.log(usersById);
+
+return;
 let strings = ["Hare", "Krishna", "Hare", "Krishna",
   "Krishna", "Krishna", "Hare", "Hare", ":-O"
 ];

@@ -1,3 +1,22 @@
+let objSample = { 
+	'Gene' : 250,
+	'Yiff' : 530,
+}
+
+function sumSalaries(obj){
+    //return results = Object.entries(obj).reduce( (sum, value) => sum + value[1], 0);
+
+	let sum = 0;
+
+	for ( values of Object.values(obj)){
+		sum += values;
+	}
+	return sum;
+}
+
+console.log(sumSalaries(objSample));
+
+return;
 let c = {name:"John"};
 
 function A() { return c }

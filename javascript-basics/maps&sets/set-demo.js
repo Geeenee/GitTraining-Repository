@@ -1,3 +1,26 @@
+let anagramArray = ["nap", "teachers", "cheaters", "PAN", "ear", "era", "hectares"];
+
+let aclean = (arr) => {
+	let firstinstancesarray = []
+	let duperegistry = []
+	for ( let str of arr ) {
+		let sortedstr = str.split('').sort().join('').tolowercase();
+		if(duperegistry.includes(sortedstr)){
+			continue;		
+		}else{
+			duperegistry.push(sortedstr);
+		};
+		
+		firstinstancesarray.push(str);
+	};
+
+	return firstinstancesarray;
+};
+//aclean(anagramArray);
+//return;
+console.log(aclean(anagramArray))
+
+return;
 let map = new Map();
 
 map.set("name", "John");

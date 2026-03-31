@@ -1,7 +1,15 @@
+
+
 let objSample = { 
 	'Gene' : 250,
 	'Yiff' : 530,
 }
+
+let count = function(obj){
+    return Object.keys(obj).length;
+}
+
+console.log(count(objSample))
 
 function sumSalaries(obj){
     //return results = Object.entries(obj).reduce( (sum, value) => sum + value[1], 0);

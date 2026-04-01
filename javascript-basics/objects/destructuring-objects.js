@@ -5,8 +5,17 @@ let salaries = {
 }
 
   let topSalary = function(obj){
-    let entries = Object.entries(obj);
-    return entries.length ? entries.sort( (a, b) => b[1] - a[1])[0][0] : null;
+	let maxName = null, maxSalary = 0;
+
+    for (const [ name, salary ] of Object.entries(obj)){
+	if(salary > maxSalary){
+		maxName = name;
+		maxSalary = salary;
+	}
+    }
+
+
+	  return maxName;
   }
 
 console.log(topSalary(salaries));

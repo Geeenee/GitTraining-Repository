@@ -1,30 +1,6 @@
   function getWeekDay(date){
-    let weekDayShortFormat;
-
-    switch(date.getDay()){
-      case 0:
-      weekDayShortFormat = 'SU'
-      break;
-      case 1:
-      weekDayShortFormat = 'MO'
-      break;
-      case 2:
-      weekDayShortFormat = 'TU'
-      break;
-      case 3:
-      weekDayShortFormat = 'WE'
-      break;
-      case 4:
-      weekDayShortFormat = 'TH'
-      break;
-      case 5:
-      weekDayShortFormat = 'FR'
-      break;
-      case 6:
-      weekDayShortFormat = 'SA'
-      break;
-    }
-    return weekDayShortFormat;
+    let weekDayShortFormat = ['SU', 'MO', 'TU', 'WE', 'TH', 'FR', 'SA']
+    return weekDayShortFormat[date.getDay()];
   }
 
 console.log(getWeekDay(new Date()))

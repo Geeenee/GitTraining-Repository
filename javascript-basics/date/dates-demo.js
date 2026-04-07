@@ -1,4 +1,10 @@
-  function getLocalDay(date){
+  let getDateAgo = (date, day) => {
+    return new Date(date.getFullYear(), date.getMonth(), date.getDate() - day ).getDate();
+  }
+
+console.log(getDateAgo(new Date(), 5))
+return;
+function getLocalDay(date){
     let day = date.getDay() 
     return day == 0 ? 7 : day
   }

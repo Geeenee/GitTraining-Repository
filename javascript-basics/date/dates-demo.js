@@ -1,4 +1,11 @@
-  function getWeekDay(date){
+  function getLocalDay(date){
+    let day = date.getDay() 
+    return day == 0 ? 7 : day
+  }
+
+console.log(getLocalDay(new Date()));
+return;
+function getWeekDay(date){
     let weekDayShortFormat = ['SU', 'MO', 'TU', 'WE', 'TH', 'FR', 'SA']
     return weekDayShortFormat[date.getDay()];
   }

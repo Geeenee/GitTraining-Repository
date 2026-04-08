@@ -1,4 +1,20 @@
-  let getLastDayOfMonth = (year, month) => {
+let getSecondsToday = function(){
+	let today = new Date().setHours( 0, 0, 0, 0)
+	
+	return Math.round((Date.now() - today) / 1000);
+}; 
+
+let getSecondsToTomorrow = function(){
+	let now = new Date();
+	let tomorrow = new Date(now.getFullYear(), now.getMonth(), now.getDate() + 1).setHours(0, 0, 0, 0);
+	
+	return Math.round((tomorrow - Date.now()));
+}
+console.log((getSecondsToday()))
+console.log(new Date(getSecondsToTomorrow()))
+
+return;
+let getLastDayOfMonth = (year, month) => {
     return new Date(year, month + 1, 0).getDate();
   }
 console.log(getLastDayOfMonth(2012, 1));

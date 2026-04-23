@@ -1,4 +1,4 @@
-let sumToV1 = (n) => {
+let sumToV1 = (n) => { //For Loop
 	let j = 0;
 	for (let i = 0; i <= n; i++ ){
 		j += i;
@@ -6,4 +6,12 @@ let sumToV1 = (n) => {
 	return j;
 };
 
-console.log(sumToV1(100));
+let sumToV2 = (n) => { //Recursion
+	if(n == 1){
+		return n;
+	}else{
+		return n + sumToV2( n - 1 );
+	}
+}
+
+console.log(sumToV2(100));

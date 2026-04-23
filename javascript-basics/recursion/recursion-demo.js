@@ -14,4 +14,10 @@ let sumToV2 = (n) => { //Recursion
 	}
 }
 
-console.log(sumToV2(100));
+let sumToV3 = (n) => {
+	return (n / 2) * (2 * 1 + (n - 1) * 1)
+}
+
+//console.log(sumToV2(100));
+
+console.log(sumToV3(100));

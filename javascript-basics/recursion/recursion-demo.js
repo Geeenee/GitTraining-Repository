@@ -1,3 +1,11 @@
+let factorial = (n) => {
+	if(n == 1) return n;
+	return n * factorial( n - 1 );
+};
+
+console.log(factorial(5));
+
+return;
 let sumToV1 = (n) => { //For Loop
 	let j = 0;
 	for (let i = 0; i <= n; i++ ){

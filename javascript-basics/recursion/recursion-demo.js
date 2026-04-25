@@ -1,3 +1,30 @@
+let list = {
+  value: 1,
+  next: {
+    value: 2,
+    next: {
+      value: 3,
+      next: {
+        value: 4,
+        next: null
+      }
+    }
+  }
+};
+
+function printListV1(linkedList){ //loop
+	let current = linkedList;
+
+	while(current){
+		console.log(current.value);
+		current = current.next
+
+	};
+}
+
+printListV1(list);
+
+return;
 function fib(n){
 	return n <= 1 ? n : fib( n - 1 ) + fib( n - 2 );
 }

@@ -23,9 +23,11 @@ function printListV1(linkedList){ //loop
 }
 
 function printListV2(linkedList){ //Recursion
-	if(!linkedList) return;
 	console.log(linkedList.value);
-	printListV2(linkedList.next);
+
+	if(linkedList.next){
+		printListV2(linkedList.next);
+	}
 }
 
 printListV2(list);

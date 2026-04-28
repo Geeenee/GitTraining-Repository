@@ -22,7 +22,13 @@ function printListV1(linkedList){ //loop
 	};
 }
 
-printListV1(list);
+function printListV2(linkedList){ //Recursion
+	if(!linkedList) return;
+	console.log(linkedList.value);
+	printListV2(linkedList.next);
+}
+
+printListV2(list);
 
 return;
 function fib(n){

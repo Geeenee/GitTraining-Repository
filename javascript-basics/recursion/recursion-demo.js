@@ -30,7 +30,7 @@ function printListV2(linkedList){ //Recursion
 	}
 }
 
-function reversePrintListV1(linkedList){
+function reversePrintListV1(linkedList){ //Loop
 	let current = linkedList;
 	let stack = [];
 
@@ -43,7 +43,15 @@ function reversePrintListV1(linkedList){
 
 }
 
-reversePrintListV1(list);
+function reversePrintListV2(linkedList){//Recursion
+	if(linkedList.next){
+		reversePrintListV2(linkedList.next);
+	}
+
+	console.log(linkedList.value)
+}
+
+reversePrintListV2(list);
 
 return;
 function fib(n){

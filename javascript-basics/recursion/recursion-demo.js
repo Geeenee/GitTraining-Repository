@@ -30,7 +30,20 @@ function printListV2(linkedList){ //Recursion
 	}
 }
 
-printListV2(list);
+function reversePrintListV1(linkedList){
+	let current = linkedList;
+	let stack = [];
+
+	while(current){
+		stack.push(current.value);
+		current = current.next;
+	}
+
+	stack.sort( ( a, b ) => b - a).forEach( data => console.log(data));
+
+}
+
+reversePrintListV1(list);
 
 return;
 function fib(n){

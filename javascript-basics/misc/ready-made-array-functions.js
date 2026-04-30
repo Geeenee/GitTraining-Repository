@@ -2,7 +2,7 @@
   
   function inBetween(a, b) {
     return function(data){
-	
+	return data >= a && data <= b ? true : false;
     }
   }
   
@@ -14,5 +14,5 @@
 
 
 
-console.log(arr.filter(inArray([1, 2 ,3, 10])));
-//console.log(arr.filter(inBetween([2, 4])));
+//console.log(arr.filter(inArray([1, 2 ,3, 10])));
+console.log(arr.filter(inBetween(2, 4)));

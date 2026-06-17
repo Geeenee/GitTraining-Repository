@@ -1,8 +1,7 @@
 function spy(fn){
 	function wrapper(...args){
-		let result = fn.apply(this, args)
 		wrapper.calls.push(args)
-		return result;
+		return fn.apply(this, args);
 	}
 
 	wrapper.calls = [];

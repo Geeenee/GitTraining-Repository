@@ -8,3 +8,9 @@ function spy(fn){
 
 	return wrapper;
 }
+
+function delay(fn, ms){
+	return function(...args){
+		setTimeout(() => fn.apply(this, args), ms);
+	}
+}

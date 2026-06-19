@@ -14,3 +14,12 @@ function delay(fn, ms){
 		setTimeout(() => fn.apply(this, args), ms);
 	}
 }
+
+let debounce = function(fn, ms){
+	let timeoutId;
+	return function(...args){
+		clearTimeout(timeoutId);
+		timeoutId = setTimeout(()=> fn.apply(this, args), ms);
+
+	}
+}

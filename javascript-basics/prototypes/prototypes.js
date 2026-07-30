@@ -1,3 +1,12 @@
+function f(name){
+	this.name = name;
+}
+
+let obj = new f('g');
+let obj2 = new obj.constructor('c');
+console.log(obj2);
+
+return;
 let head = {
   glasses: 1
 };
@@ -46,3 +55,7 @@ console.log( speedy.stomach ); // apple
 
 // This one also has it, why? fix please.
 console.log( lazy.stomach ); // apple
+
+
+
+

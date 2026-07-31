@@ -1,8 +1,20 @@
+function f3(a, b){
+	console.log( a + b );
+}
+
+Function.prototype.defer = function(ms){
+	return (a, b) => {
+		setTimeout(() => {this(a, b)}, ms);
+	} 
+};
+
+f3.defer(1000)(1, 2);
+return;
 function f2(){
 	console.log('ellow');
 }
 
-Function.prototype.defer = function(ms){
+Function.prototype.deferx = function(ms){
 	setTimeout(this,ms);
 }
 //f2();

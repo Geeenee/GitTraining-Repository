@@ -3,12 +3,25 @@ function f3(a, b){
 }
 
 Function.prototype.defer = function(ms){
-	return (a, b) => {
-		setTimeout(() => {this(a, b)}, ms);
+	let f = this;
+	return function(...args){
+		setTimeout(() => f.apply(this, args), ms);
 	} 
 };
 
-f3.defer(1000)(1, 2);
+//f3.defer(1000)(1, 2);
+
+
+let user = {
+  name: "John",
+  sayHi() {
+    console.log(this.name);
+  }
+}
+
+user.sayHi = user.sayHi.defer(1000);
+
+user.sayHi();
 return;
 function f2(){
 	console.log('ellow');

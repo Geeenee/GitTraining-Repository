@@ -1,3 +1,16 @@
+function f2(){
+	console.log('ellow');
+}
+
+Function.prototype.defer = function(ms){
+	setTimeout(this,ms);
+}
+//f2();
+//let startMs = performance.now();
+f2.defer(1000);
+//console.log(performance.now() - startMs);
+
+return;
 function f(name){
 	this.name = name;
 }

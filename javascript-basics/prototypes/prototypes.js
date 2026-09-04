@@ -1,3 +1,25 @@
+let dictionary = Object.create(null);
+
+//dictionary.toString = function () {
+//    console.log(Object.entries(this))
+//};
+
+Object.defineProperty(dictionary, 'toString', {
+	value: function() { return Object.keys(this).join()},
+	enumerable: false,
+
+})
+
+dictionary.apple = "Apple";
+dictionary.__proto__ = "test";
+
+for(let key in dictionary){
+	//console.log(key);
+}
+
+//console.log(dictionary);
+console.log(String(dictionary));
+return;
 function f3(a, b){
 	console.log( a + b );
 }

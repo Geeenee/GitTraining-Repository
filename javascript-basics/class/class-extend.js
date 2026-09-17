@@ -1,3 +1,16 @@
+class Rabbit extends Object{
+	constructor(name){
+		super();
+		this.name = name;
+	}
+}
+
+let rabbit = new Rabbit('John')
+
+console.log( rabbit.hasOwnProperty('name'))
+
+
+return;
 class Clock {
   constructor({ template }) {
     this.template = template;
